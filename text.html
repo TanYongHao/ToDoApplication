@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="align-items: center; display: flex; justify-content: center; text-align: center; display: flex; flex-direction: column;">
+    <p style="font-family: Montserrat; font-size: 20px; text-align: center;">Enter the time specified:</p>
+    <input type="text" id="time-input" placeholder="00:00:00" style="text-align: center;">
+    <button type="submit" style="margin-top: 10px;" id="time-submit">Submit</button>
+</body>
+<script>
+    document.getElementById('time-submit').addEventListener('click', ()=> {
+    const submittedTime = document.getElementById('time-input').value.trim();
+    window.opener.changeTime(submittedTime);
+
+    window.close();
+});
+</script>
+</html>

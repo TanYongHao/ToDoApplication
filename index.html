@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>To-Do Application</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+</head>
+<body>
+    <div id="top-bar">
+        <div id="top-left">
+            <h1>Countdown</h1>
+            <div id="display">
+                <span id="hours">00</span>:<span id="minutes">00</span>:<span id="seconds">00</span>
+            </div>
+            <div class="controls">
+                <button id="startButton">Start</button>
+                <button id="stopButton" >Stop</button>
+                <button id="resetButton">Reset</button>
+            </div>
+        </div>
+        <div id="top-right">
+            <div id="top-right-top">
+                <p>Progression</p>
+                <div id="progress">
+                    <div id="bar"></div>
+                </div>
+            </div>
+            <div id="top-right-bottom">
+                <input type="text" id="task-input" placeholder="Enter your task here">
+                <button id="add-item">Add Task</button>
+            </div>
+        </div>
+    </div>
+    <div id="bottom-bar">
+        <p>Tasks</p>
+        <div id="tasks-list">
+
+        </div>
+    </div>
+    <div id="close">
+        <button id="close-button">Finish Day</button>
+    </div>
+</body>
+<script src="script.js">
+</script>
+</html>
